@@ -1,0 +1,35 @@
+tkmedit started: Fri Mar 25 17:40:17 2011
+
+	tkmedit.bin -f IBSR_01_mri_norm.mgz 
+
+$Id: tkmedit.c,v 1.343 2011/03/01 01:41:22 nicks Exp $ $Name:  $
+Set user home dir to /autofs/cluster/con_003/users/mert/code/BrainFuseLab/temp
+Set subject home dir to IBSR_01_mri_norm.mgz
+Error in LoadVolume( iType=0, isName=IBSR_01_mri_norm.mgz, ibConform = 0 ) (line 470)
+	while Importing volume with MRIread
+	Error 5: Couldn't read volume.
+xDebug stack (length: 5)
+          04: Volm_ImportData( this=0x385958e0, isSource=./IBSR_01_mri_norm.mgz )
+          04: Importing volume with MRIread
+        03: LoadVolume( iType=0, isName=IBSR_01_mri_norm.mgz, ibConform = 0 )
+        03: Reading data into volume
+      02: ParseCmdLineArgs( argc=3, argv=tkmedit.bin )
+      02: Loading volume IBSR_01_mri_norm.mgz
+    01: main()
+    01: Parsing command line arguments
+  00: 
+  00: 
+Error in ParseCmdLineArgs( argc=3, argv=tkmedit.bin ) (line 8383)
+	while Reading data into volume
+	Error 9: Couldn't read the anatomical volume.
+xDebug stack (length: 4)
+        03: LoadVolume( iType=0, isName=IBSR_01_mri_norm.mgz, ibConform = 0 )
+        03: Reading data into volume
+      02: ParseCmdLineArgs( argc=3, argv=tkmedit.bin )
+      02: Loading volume IBSR_01_mri_norm.mgz
+    01: main()
+    01: Parsing command line arguments
+  00: 
+  00: 
+ERROR: Loading volume IBSR_01_mri_norm.mgz
+   Couldn't read the anatomical volume.
